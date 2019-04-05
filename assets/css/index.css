@@ -1,0 +1,447 @@
+@import "./reset.css";
+
+.app {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+}
+
+.app .container {
+  height: 43.446rem;
+  padding-top: 4.15rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url("../img/bg_home.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.app .container .topBox {
+  padding: 0 0.667rem;
+}
+.app .container .centerBox {
+  padding: 0 0;
+}
+.app .container .bottomBox {
+  padding: 0 0.32rem;
+}
+.container .item__rule {
+  height: 3.36rem;
+  overflow: hidden;
+}
+.container .item__rule .rule__content {
+  float: left;
+  width: 5.733rem;
+  font-size: 0.32rem;
+  color: #e7c2ff;
+}
+.container .item__rule .rule__content .content__title {
+  margin-bottom: 0.25rem;
+  font-size: 0.4rem;
+}
+.container .item__rule .rule__content .content__item {
+  margin-bottom: 0.2rem;
+}
+.container .item__rule .rule__content .content__item:last-child {
+  margin-bottom: 0;
+}
+.container .item__rule .rule__QRBox {
+  float: right;
+  height: 100%;
+  width: 2.6rem;
+}
+.container .item__rule .rule__QRBox .QRBox__icon {
+  width: 2.6rem;
+  height: 2.6rem;
+  margin: 0.4rem auto 0;
+  padding: 0.093rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url("../img/bg_QR.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.container .item__rule .rule__QRBox .QRBox__icon .icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: url("../img/img_QRCode.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.container .item__rule .rule__QRBox .QRBox__text {
+  text-align: center;
+  font-size: 0.24rem;
+  color: #000;
+}
+.container .item__input {
+  height: 1.3rem;
+  line-height: 0rem;
+  padding-top: 0.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+.container .item__input input {
+  width: 100%;  
+  height: 0.8rem;
+  border: none;
+  border-radius: 0.067rem;
+  font-size: 0.4rem;
+  color: #3e3e3e;
+}
+.container .item__draw {
+  height: 14.64rem;
+  background: url("../img/bg_dial.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.container .item__draw .dialBox {
+  position: relative;
+  height: 10.98rem;
+}
+.container .item__draw .dialBox .dial__pointer {
+  position: absolute;
+  width: 2.8rem;
+  height: 3.16rem;
+  top: 5.733rem;
+  left: 5rem;
+  margin: -1.58rem 0 0 -1.4rem;
+  background: url("../img/img_pointer.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.container .item__draw .operateBox {
+  text-align: center;
+  font-size: 0.16rem;
+  color: #fff;
+}
+.container .item__draw .operateBox .operate__chance {
+  font-size: 0.427rem;
+}
+.container .item__draw .operateBox .operate__chance .chance__time {
+  font-size: 0.6rem;
+  color: #ff9d14;
+}
+.container .item__draw .operateBox .operate__share .share__button {
+  width: 2.933rem;
+  height: 0.8rem;
+  margin: 0.25rem 0 0.15rem;
+  padding-bottom: 0.05rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  font-size: 0.48rem;
+  color: #fff;
+  background: url("../img/bg_button.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.container .item__draw .operateBox .operate__hint {
+  font-size: 0.24rem;
+  color: #e3bdfc;
+}
+.container .item__draw .operateBox .operate__gift .gift__button {
+  width: 2.933rem;
+  height: 0.8rem;
+  margin-top: 0.58rem;
+  padding-left: 0.8rem;
+  padding-bottom: 0.05rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  font-size: 0.48rem;
+  color: #fff;
+  background: url("../img/bg_button-gift.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.container .item__gift {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 10.453rem;
+  margin-top: 0.867rem;
+}
+.container .item__gift .gift__title {
+  height: 0.8rem;
+  font-size: 0.48rem;
+  color: #fff;
+  text-align: center;
+}
+.container .item__gift .giftBox {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: url("../img/bg_giftDisplay.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.container .item__gift .gift__item {
+  position: relative;
+  float: left;
+  height: 2.933rem;
+  width: 2.826rem;
+  margin: 0.213rem 0 0 0.213rem;
+}
+.container .item__gift .gift__item.with-crown::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: -0.213rem;
+  left: -0.213rem;
+  width: 0.427rem;
+  height: 0.427rem;
+  background: url("../img/icon_crown.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.container .item__gift .gift__item img{
+  width: 100%;
+  height: 100%;
+}
+.container .item__dynamics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 7.533rem;
+  margin-top: 0.867rem;
+  padding: 0 0.4rem 0.3rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container .item__dynamics .dynamics__title {
+  height: 0.8rem;
+  font-size: 0.48rem;
+  color: #fff;
+  text-align: center;
+}
+.container .item__dynamics .dynamicsBox {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.13rem 0.4rem 0.21rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 0.293rem;
+  background: url("../img/bg_dynamic.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.container .item__dynamics .dynamics__header {
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.32rem;
+  text-align: center;
+}
+.container .item__dynamics .dynamics__itemBox {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: auto;
+}
+.container .item__dynamics .dynamics__item {
+  overflow: hidden;
+  height: 0.64rem;
+  line-height: 0.64rem;
+}
+.container .item__dynamics .dynamicsBox .name {
+  float: left;
+  width: 28%;
+  text-align: center;
+  color: #fb7828;
+}
+.container .item__dynamics .dynamicsBox .phone {
+  float: left;
+  width: 41%;
+  text-align: center;
+  color: #3e3e3e;
+}
+.container .item__dynamics .dynamicsBox .gift {
+  float: left;
+  width: 31%;
+  text-align: center;
+  color: #fa425a;
+}
+
+.app .dialog {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 43.446rem;
+  background: url("../img/bg_shade.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.dialog .awardBox {
+  display: none;
+  width: 6.133rem;
+  height: 6.947rem;
+  margin: 5.293rem auto;
+  background: url("../img/bg_award.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.dialog .awardBox .award__content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.dialog .awardBox .award__content .content__img {
+  width: 2.07rem;
+  height: 2.36rem;
+  margin: 1.6rem auto 0;
+  background: url("../img/img_award.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.dialog .awardBox .award__content .content__text {
+  font-size: 0.48rem;
+  color: #fff;
+  text-align: center;
+}
+.dialog .awardBox .award__content .content__text .text__deadline {
+  padding-top: 0.133rem;
+  font-size: 0.267rem;
+  color: #ad8dee;
+}
+.dialog .awardBox .award__close {
+  margin-top: 0.667rem;
+  text-align: center;
+}
+.dialog .awardBox .award__close .close__button{
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: none;
+  background: url("../img/bg_button-close.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.dialog .giftBox {
+  display: none;
+  width: 100%;
+  height: 15.787rem;
+  margin-top: 2.133rem;
+  background: url("../img/bg_myGift.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.dialog .giftBox .gift__content {
+  height: 5.333rem;
+  padding: 4.44rem 2.16rem 0.5rem;
+  overflow: hidden;
+}
+.dialog .giftBox .gift__content .contentBox {
+  height: 100%;
+  overflow: auto;
+}
+.dialog .giftBox .gift__content .content__item {
+  height: 1.6rem;
+  overflow: hidden;
+  margin-bottom: 0.173rem;
+  background: url("../img/bg_gift-item.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.dialog .giftBox .gift__content .content__item:last-child {
+  margin-bottom: 0;
+}
+.dialog .giftBox .gift__content .content__item .item__icon {
+  float: left;
+  width: 27.4%;
+  height: 100%;
+  padding: 0.3rem 0.307rem 0.36rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.dialog .giftBox .gift__content .content__item .item__icon .icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: url("../img/img_gift-redPacket30.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.dialog .giftBox .gift__content .content__item .item__detail {
+  float: left;
+  width: 43.1%;
+  height: 100%;
+  padding: 0.25rem 0.307rem 0.24rem 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 0.293rem;
+  color: #fff;
+}
+.dialog .giftBox .gift__content .content__item .detail__deadline {
+  margin-bottom: 0.05rem;
+  font-size: 0.24rem;
+  color: #ad8dee;
+}
+.dialog .giftBox .gift__content .content__item .item__valid {
+  position: relative;
+  float: left;
+  width: 29.5%;
+  height: 100%;
+  font-size: 0.24rem;
+  color: #ad8dee;
+}
+.dialog .giftBox .gift__content .content__item .item__valid .valid__text {
+  position: absolute;
+  left: 0;
+  bottom: 0.133rem;
+}
+.dialog .giftBox .gift__close {
+  margin-top: 0.667rem;
+  text-align: center;
+}
+.dialog .giftBox .gift__close .close__button{
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: none;
+  background: url("../img/bg_button-close.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.app .share {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  height: 100%;
+  background: url("../img/share__bg.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.share .share__arrow {
+  position: absolute;
+  right: 0.507rem;
+  top: 0.5rem;
+  display: inline-block;
+  width: 1.667rem;
+  height: 1.547rem;
+  background: url("../img/share__arrow.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.share .share__hint {
+  position: absolute;
+  right: 1rem;
+  top: 2.2rem;
+  display: inline-block;
+  width: 2.64rem;
+  height: 0.337rem;
+  background: url("../img/share__hint.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.share .share__button {
+  position: absolute;
+  right: 0.706rem;
+  top: 3rem;
+  display: inline-block;
+  width: 3.467rem;
+  height: 1.013rem;
+  border: none;
+  background: url("../img/share__button.png") center center no-repeat;
+  background-size: 100% 100%;
+}
