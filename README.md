@@ -1,8 +1,8 @@
 ## h5-draw
 
-一个简单的抽奖互动页面，使用rem做移动端的响应式适配。
+一个简单的抽奖活动页面，使用rem做移动端的响应式适配。
 
-## 参考
+### 参考
 
 - [移动web适配利器-rem](https://github.com/amfe/article/issues/17)
 - [amfe-flexible](http://www.alloyteam.com/2016/03/mobile-web-adaptation-tool-rem/)
